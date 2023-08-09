@@ -1,4 +1,4 @@
-module github.com/azzam2912/api
+module github.com/azzam2912/xeratha-link-repo/api
 
 go 1.20
 
