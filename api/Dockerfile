@@ -4,8 +4,8 @@ WORKDIR /api
 
 COPY . /api
 
-RUN go build -o main .
+RUN go build -o ./api/main .
 
 EXPOSE 8080
 
-CMD ["./api"]
+CMD ["./api/main.go"]
