@@ -1,11 +1,17 @@
-FROM golang:1.20.6
+# Use the official Go image as the base image
+FROM golang:1.15
 
-WORKDIR /api
+# Set the working directory in the container
+WORKDIR /app
 
-COPY . /api
+# Copy the application files into the working directory
+COPY . /app
 
-RUN go build -o ./api/main .
+# Build the application
+RUN go build -o main .
 
+# Expose port 8080
 EXPOSE 8080
 
-CMD ["./api/main.go"]
+# Define the entry point for the container
+CMD ["./main"]
