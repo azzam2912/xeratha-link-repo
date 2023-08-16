@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Xerahta Link Repo',
+  title: 'Xeratha Link Repo',
   description: 'A bunch of useful links here!',
 }
 
@@ -13,6 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel='shortcut icon' href='/logo-red-blue.png' />
+      </head>
       <body>{children}</body>
     </html>
   )
